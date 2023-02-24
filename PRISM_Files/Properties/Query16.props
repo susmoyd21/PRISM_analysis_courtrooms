@@ -1,0 +1,18 @@
+// 16. Miscellaneous Properties.
+
+// (a) How often do we see `laughter' inside the courtroom during a proceeding?
+
+filter(avg,R{"LAUGHTER"}=?[F "FINAL"],"INITIAL")
+
+
+// (b) Of all the utterances in the courtroom during a proceeding, what is the proportion of long to small utterances? 
+
+filter(avg,R{"r_long_dialogue"}=?[F "FINAL"],"INITIAL")
+filter(avg,R{"r_small_dialogue"}=?[F "FINAL"],"INITIAL")
+
+// (c) Of all the utterances in the courtroom during a proceeding, what is the proportion of utterances having less number of pauses to more number of pauses?
+
+filter(avg,R{"r_less_pause"}=?[F "FINAL"],"INITIAL")
+filter(avg,R{"r_more_pause"}=?[F "FINAL"],"INITIAL")
+
+

@@ -1,0 +1,104 @@
+
+const int j;
+
+// 1(a) First involvement of each role during a proceeding:
+
+R{"n_step"}=?[F "JJ"]
+R{"n_step"}=?[F "PP"]
+R{"n_step"}=?[F "RR"]
+R{"n_step"}=?[F "ACYES"]
+R{"n_step"}=?[F "SU"]
+
+P=? [ true U<=2 ("PP") ]
+P=? [ true U<=1 ("JJ") ]
+
+// 1(b) What is the probability of the event that an advocate from one side is intervened/followed by an advocate from the other side immediately.
+
+filter(avg,P=? [ X ("RR") ],"PP")
+filter(avg,P=? [ X ("PP") ],"PP")
+filter(avg,P=? [ X ("RR") ],"RR")
+filter(avg,P=? [ X ("PP") ],"RR")
+
+// 1(c) What is the probability of the event that a state where // Justice is true but the name of the Justice is not available.
+
+filter(avg,P=?[F ("NREQ" & "JJ")],"INITIAL")
+filter(avg,P=?[F ("NREQ" & ("PP"|"RR"))],"INITIAL")
+
+// 1(d) What is the probability that the current state and the // next state is the same in the model.
+
+ filter(max, P=?[X(x=j)],(x=j))
+
+// 1(e) What is the probability that a trial ends with a single side only representing its argument.
+
+P=?[!("RR")U("CLOSING")]
+P=?[!("PP")U("CLOSING")]
+// P=?[!("REBUTTAL")U("CLOSING")]
+
+// 1(f) What proportion of cases went in the favor of Prosecution/Respondents?
+
+P=? [ X("FP") U ("NFP" ) ]
+P=? [ X("FP") U ("FP" ) ]
+// P=? [ X("FP") U ("DNC" ) ]
+
+// P=? [ X("NFP") U ("DNC" ) ]
+P=? [ X("NFP") U ("FP" ) ]
+P=? [ X("NFP") U ("NFP" ) ]
+
+// P=? [ X("DNC") U ("NFP" ) ]
+// P=? [ X("DNC") U ("FP" ) ]
+// P=? [ X("DNC") U ("DNC" ) ]
+
+// 1(g) What proportion of judgments went in favor of the prosecution/respondent for each of the judges?
+
+P=? [ (X "jone0") U ("jone0") ]
+P=? [ (X "jone0") U ("jone1") ]
+P=? [ (X "jone1") U ("jone0") ]
+P=? [ (X "jone1") U ("jone1") ]
+
+P=? [ (X "jtwo0") U ("jtwo0") ]
+P=? [ (X "jtwo0") U ("jtwo1") ]
+P=? [ (X "jtwo1") U ("jtwo0") ]
+P=? [ (X "jtwo1") U ("jtwo1") ]
+
+P=? [ (X "jthree0") U ("jthree0") ]
+P=? [ (X "jthree0") U ("jthree1") ]
+P=? [ (X "jthree1") U ("jthree0") ]
+P=? [ (X "jthree1") U ("jthree1") ]
+
+P=? [ (X "jfour0") U ("jfour0") ]
+P=? [ (X "jfour0") U ("jfour1") ]
+P=? [ (X "jfour1") U ("jfour0") ]
+P=? [ (X "jfour1") U ("jfour1") ]
+
+P=? [ (X "jfive0") U ("jfive0") ]
+P=? [ (X "jfive0") U ("jfive1") ]
+P=? [ (X "jfive1") U ("jfive0") ]
+P=? [ (X "jfive1") U ("jfive1") ]
+
+P=? [ (X "jsix0") U ("jsix0") ]
+P=? [ (X "jsix0") U ("jsix1") ]
+P=? [ (X "jsix1") U ("jsix0") ]
+P=? [ (X "jsix1") U ("jsix1") ]
+
+P=? [ (X "jseven0") U ("jseven0") ]
+P=? [ (X "jseven0") U ("jseven1") ]
+P=? [ (X "jseven1") U ("jseven0") ]
+P=? [ (X "jseven1") U ("jseven1") ]
+
+P=? [ (X "jeight0") U ("jeight0") ]
+P=? [ (X "jeight0") U ("jeight1") ]
+P=? [ (X "jeight1") U ("jeight0") ]
+P=? [ (X "jeight1") U ("jeight1") ]
+
+P=? [ (X "jnine0") U ("jnine0") ]
+P=? [ (X "jnine0") U ("jnine1") ]
+P=? [ (X "jnine1") U ("jnine0") ]
+P=? [ (X "jnine1") U ("jnine1") ]
+
+
+P=? [ (X ("jone0" & "jthree0" & "jtwo0" & "jfour0" & "jfive0" & "jsix0" & "jseven0" & "jeight0" & "jnine0")) | (X ("jone1" & "jthree1" & "jtwo1" & "jfour1" & "jfive1" & "jsix1" & "jseven1" & "jeight1" & "jnine1"))]
+P=? [  X ("jone1" & "jthree1" & "jtwo1" & "jfour1" & "jfive1" & "jsix1" & "jseven1" & "jeight1" & "jnine1")]
+P=? [ X ("jone0" & "jthree0" & "jtwo0" & "jfour0" & "jfive0" & "jsix0" & "jseven0" & "jeight0" & "jnine0")]
+
+
+

@@ -1,0 +1,66 @@
+// 6. Average number of times each judge intervenes during a proceeding.
+
+filter(avg,R{"JEIGHT_INTERVENING"}=?[F "FINAL"],"INITIAL")
+
+filter(avg,R{"JONE_INTERVENING"}=?[F "FINAL"],"INITIAL")
+
+filter(avg,R{"JTHREE_INTERVENING"}=?[F "FINAL"],"INITIAL")
+
+filter(avg,R{"JSEVEN_INTERVENING"}=?[F "FINAL"],"INITIAL")
+
+filter(avg,R{"JFIVE_INTERVENING"}=?[F "FINAL"],"INITIAL")
+
+filter(avg,R{"JSIX_INTERVENING"}=?[F "FINAL"],"INITIAL")
+
+filter(avg,R{"JTWO_INTERVENING"}=?[F "FINAL"],"INITIAL")
+
+filter(avg,R{"JFOUR_INTERVENING"}=?[F "FINAL"],"INITIAL")
+
+filter(avg,R{"JNINE_INTERVENING"}=?[F "FINAL"],"INITIAL")
+
+
+
+filter(avg,R{"JJ_INTERVENINGPP"}=? [F"FINAL" ],"INITIAL")
+filter(avg,R{"JJ_INTERVENINGRR"}=? [F"FINAL" ],"INITIAL")
+filter(avg,R{"JJ_INTERVENINGAC"}=? [F"FINAL" ],"INITIAL")
+
+filter(avg,R{"JTWO_INTERVENINGPP"}=? [F"FINAL" ],"INITIAL")
+filter(avg,R{"JTWO_INTERVENINGRR"}=? [F"FINAL" ],"INITIAL")
+filter(avg,R{"JTWO_INTERVENINGAC"}=? [F"FINAL" ],"INITIAL")
+
+filter(avg,R{"JEIGHT_INTERVENINGPP"}=? [F"FINAL" ],"INITIAL")
+filter(avg,R{"JEIGHT_INTERVENINGRR"}=? [F"FINAL" ],"INITIAL")
+filter(avg,R{"JEIGHT_INTERVENINGAC"}=? [F"FINAL" ],"INITIAL")
+
+filter(avg,R{"JONE_INTERVENINGPP"}=? [F"FINAL" ],"INITIAL")
+filter(avg,R{"JONE_INTERVENINGRR"}=? [F"FINAL" ],"INITIAL")
+filter(avg,R{"JONE_INTERVENINGAC"}=? [F"FINAL" ],"INITIAL")
+
+filter(avg,R{"JSEVEN_INTERVENINGPP"}=? [F"FINAL" ],"INITIAL")
+filter(avg,R{"JSEVEN_INTERVENINGRR"}=? [F"FINAL" ],"INITIAL")
+filter(avg,R{"JSEVEN_INTERVENINGAC"}=? [F"FINAL" ],"INITIAL")
+
+filter(avg,R{"JTHREE_INTERVENINGPP"}=? [F"FINAL" ],"INITIAL")
+filter(avg,R{"JTHREE_INTERVENINGRR"}=? [F"FINAL" ],"INITIAL")
+filter(avg,R{"JTHREE_INTERVENINGAC"}=? [F"FINAL" ],"INITIAL")
+
+filter(avg,R{"JNINE_INTERVENINGPP"}=? [F"FINAL" ],"INITIAL")
+filter(avg,R{"JNINE_INTERVENINGRR"}=? [F"FINAL" ],"INITIAL")
+filter(avg,R{"JNINE_INTERVENINGAC"}=? [F"FINAL" ],"INITIAL")
+
+filter(avg,R{"JFIVE_INTERVENINGPP"}=? [F"FINAL" ],"INITIAL")
+filter(avg,R{"JFIVE_INTERVENINGRR"}=? [F"FINAL" ],"INITIAL")
+filter(avg,R{"JFIVE_INTERVENINGAC"}=? [F"FINAL" ],"INITIAL")
+
+filter(avg,R{"JSIX_INTERVENINGPP"}=? [F"FINAL" ],"INITIAL")
+filter(avg,R{"JSIX_INTERVENINGRR"}=? [F"FINAL" ],"INITIAL")
+filter(avg,R{"JSIX_INTERVENINGAC"}=? [F"FINAL" ],"INITIAL")
+
+filter(avg,R{"JFOUR_INTERVENINGPP"}=? [F"FINAL" ],"INITIAL")
+filter(avg,R{"JFOUR_INTERVENINGRR"}=? [F"FINAL" ],"INITIAL")
+filter(avg,R{"JFOUR_INTERVENINGAC"}=? [F"FINAL" ],"INITIAL")
+
+
+
+
+

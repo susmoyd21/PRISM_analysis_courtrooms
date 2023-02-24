@@ -1,0 +1,16 @@
+// 5. Average number of occurences of each utterance type during a proceeding.
+
+filter(avg, R{"n_step"}=?[F "FINAL"],"INITIAL")
+
+filter(avg, R{"r_OPENING"}=?[F "FINAL"],"INITIAL")
+
+filter(avg, R{"r_CLOSING"}=?[F "FINAL"],"INITIAL")
+
+filter(avg, R{"r_CONCLOPENING"}=?[F "FINAL"],"INITIAL")
+
+filter(avg, R{"r_NORMAL"}=?[F "FINAL"],"INITIAL")
+
+filter(avg, R{"r_INTERVENING"}=?[F "FINAL"],"INITIAL")
+
+filter(avg, R{"r_REBUTTAL"}=?[F "FINAL"],"INITIAL")
+
