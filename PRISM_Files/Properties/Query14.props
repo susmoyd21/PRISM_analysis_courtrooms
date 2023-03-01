@@ -1,7 +1,0 @@
-// 14. Analyzing events which led to multiple justices' intervening together.
-
-const int j;
-
-filter(state,R{"n_step"}=?[(X("JJ"))U(X(!("JJ")))],(("PP"|"RR")&(x=j)))
-
-filter(max, R{"n_step"}=? [ ("JJ"&"INTERVENING") U !("JJ") ],("JJ"&"INTERVENING")&(x=j))
