@@ -1,0 +1,10 @@
+// 10. Analyzing the rebuttal arguments which were intervened.
+
+const int j;
+
+P=?[(!("InterveningPPRE"))U("FINAL")]
+
+filter(max,R{"r_INTERVENING"}=?[F "FINAL"],"REBUTTAL"&(x=j))
+
+filter(max,R{"r_INTERVENING"}=?[F "FINAL"],"INTERVENINGPPRE"&(x=j))
+

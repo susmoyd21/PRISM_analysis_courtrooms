@@ -1,0 +1,21 @@
+// 3. First involvement of each Judge during the procedding:
+
+R{"n_step"}=?[F ("j__one")&(!("OPENING"))]
+R{"n_step"}=?[F ("j__one")]
+
+R{"n_step"}=?[F ("j__three")]
+
+R{"n_step"}=?[F ("j__seven")]
+
+R{"n_step"}=?[F ("j__nine")]
+
+R{"n_step"}=?[F ("j__five")]
+
+R{"n_step"}=?[F ("j__six")]
+
+R{"n_step"}=?[F ("j__four")]
+
+R{"n_step"}=?[F ("j__eight")]
+
+R{"n_step"}=?[F ("j__two")]
+

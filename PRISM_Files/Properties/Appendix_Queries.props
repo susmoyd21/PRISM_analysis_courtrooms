@@ -1,0 +1,208 @@
+
+// // Appendix-1 Cases decided by the chief justice's vote
+
+filter(avg,R{"JONE_INTERVENING"}=?[F "FINAL"],"OPENING")
+filter(avg,R{"JONE_INTERVENINGPP"}=?[F "FINAL"],"OPENING")
+filter(avg,R{"JONE_INTERVENINGRR"}=?[F "FINAL"],"OPENING")
+filter(avg,R{"JONE_INTERVENINGAC"}=?[F "FINAL"],"OPENING")    
+
+filter(avg,R{"JONE_INTERVENING"}=?[F "FINAL"],(("OPENING"&"jone0"&"jtwo0"&"jthree1"&"jfour1"&"jfive0"&"jsix1"&"jseven1"&"jeight0"&"jnine0")|("OPENING"&"jone0"&"jtwo1"&"jthree0"&"jfour0"&"jfive1"&"jsix0"&"jseven0"&"jeight1"&"jnine1")|("OPENING"&"jone1"&"jtwo1"&"jthree0"&"jfour0"&"jfive1"&"jsix0"&"jseven0"&"jeight1"&"jnine1")|("OPENING"&"jone1"&"jtwo1"&"jthree0"&"jfour1"&"jfive1"&"jsix0"&"jseven0"&"jeight0"&"jnine1")|("OPENING"&"jone0"&"jtwo0"&"jthree0"&"jfour1"&"jfive0"&"jsix1"&"jseven1"&"jeight1"&"jnine0")|("OPENING"&"jone0"&"jtwo1"&"jthree1"&"jfour1"&"jfive1"&"jsix0"&"jseven0"&"jeight0"&"jnine0")|("OPENING"&"jone1"&"jtwo0"&"jthree1"&"jfour1"&"jfive0"&"jsix1"&"jseven1"&"jeight0"&"jnine0")))
+filter(avg,R{"JONE_INTERVENINGPP"}=?[F "FINAL"],(("OPENING"&"jone0"&"jtwo0"&"jthree1"&"jfour1"&"jfive0"&"jsix1"&"jseven1"&"jeight0"&"jnine0")|("OPENING"&"jone0"&"jtwo1"&"jthree0"&"jfour0"&"jfive1"&"jsix0"&"jseven0"&"jeight1"&"jnine1")|("OPENING"&"jone1"&"jtwo1"&"jthree0"&"jfour0"&"jfive1"&"jsix0"&"jseven0"&"jeight1"&"jnine1")|("OPENING"&"jone1"&"jtwo1"&"jthree0"&"jfour1"&"jfive1"&"jsix0"&"jseven0"&"jeight0"&"jnine1")|("OPENING"&"jone0"&"jtwo0"&"jthree0"&"jfour1"&"jfive0"&"jsix1"&"jseven1"&"jeight1"&"jnine0")|("OPENING"&"jone0"&"jtwo1"&"jthree1"&"jfour1"&"jfive1"&"jsix0"&"jseven0"&"jeight0"&"jnine0")|("OPENING"&"jone1"&"jtwo0"&"jthree1"&"jfour1"&"jfive0"&"jsix1"&"jseven1"&"jeight0"&"jnine0")))
+filter(avg,R{"JONE_INTERVENINGRR"}=?[F "FINAL"],(("OPENING"&"jone0"&"jtwo0"&"jthree1"&"jfour1"&"jfive0"&"jsix1"&"jseven1"&"jeight0"&"jnine0")|("OPENING"&"jone0"&"jtwo1"&"jthree0"&"jfour0"&"jfive1"&"jsix0"&"jseven0"&"jeight1"&"jnine1")|("OPENING"&"jone1"&"jtwo1"&"jthree0"&"jfour0"&"jfive1"&"jsix0"&"jseven0"&"jeight1"&"jnine1")|("OPENING"&"jone1"&"jtwo1"&"jthree0"&"jfour1"&"jfive1"&"jsix0"&"jseven0"&"jeight0"&"jnine1")|("OPENING"&"jone0"&"jtwo0"&"jthree0"&"jfour1"&"jfive0"&"jsix1"&"jseven1"&"jeight1"&"jnine0")|("OPENING"&"jone0"&"jtwo1"&"jthree1"&"jfour1"&"jfive1"&"jsix0"&"jseven0"&"jeight0"&"jnine0")|("OPENING"&"jone1"&"jtwo0"&"jthree1"&"jfour1"&"jfive0"&"jsix1"&"jseven1"&"jeight0"&"jnine0")))
+filter(avg,R{"JONE_INTERVENINGAC"}=?[F "FINAL"],(("OPENING"&"jone0"&"jtwo0"&"jthree1"&"jfour1"&"jfive0"&"jsix1"&"jseven1"&"jeight0"&"jnine0")|("OPENING"&"jone0"&"jtwo1"&"jthree0"&"jfour0"&"jfive1"&"jsix0"&"jseven0"&"jeight1"&"jnine1")|("OPENING"&"jone1"&"jtwo1"&"jthree0"&"jfour0"&"jfive1"&"jsix0"&"jseven0"&"jeight1"&"jnine1")|("OPENING"&"jone1"&"jtwo1"&"jthree0"&"jfour1"&"jfive1"&"jsix0"&"jseven0"&"jeight0"&"jnine1")|("OPENING"&"jone0"&"jtwo0"&"jthree0"&"jfour1"&"jfive0"&"jsix1"&"jseven1"&"jeight1"&"jnine0")|("OPENING"&"jone0"&"jtwo1"&"jthree1"&"jfour1"&"jfive1"&"jsix0"&"jseven0"&"jeight0"&"jnine0")|("OPENING"&"jone1"&"jtwo0"&"jthree1"&"jfour1"&"jfive0"&"jsix1"&"jseven1"&"jeight0"&"jnine0")))
+
+filter(avg,R{"JONE_INTERVENING"}=?[F "FINAL"],(("OPENING"&"jone0"&"jtwo0"&"jthree1"&"jfour1"&"jfive0"&"jsix1"&"jseven1"&"jeight0"&"jnine0")|("OPENING"&"jone0"&"jtwo1"&"jthree0"&"jfour0"&"jfive1"&"jsix0"&"jseven0"&"jeight1"&"jnine1")|("OPENING"&"jone0"&"jtwo0"&"jthree0"&"jfour1"&"jfive0"&"jsix1"&"jseven1"&"jeight1"&"jnine0")|("OPENING"&"jone0"&"jtwo1"&"jthree1"&"jfour1"&"jfive1"&"jsix0"&"jseven0"&"jeight0"&"jnine0")))
+filter(avg,R{"JONE_INTERVENINGPP"}=?[F "FINAL"],(("OPENING"&"jone0"&"jtwo0"&"jthree1"&"jfour1"&"jfive0"&"jsix1"&"jseven1"&"jeight0"&"jnine0")|("OPENING"&"jone0"&"jtwo1"&"jthree0"&"jfour0"&"jfive1"&"jsix0"&"jseven0"&"jeight1"&"jnine1")|("OPENING"&"jone0"&"jtwo0"&"jthree0"&"jfour1"&"jfive0"&"jsix1"&"jseven1"&"jeight1"&"jnine0")|("OPENING"&"jone0"&"jtwo1"&"jthree1"&"jfour1"&"jfive1"&"jsix0"&"jseven0"&"jeight0"&"jnine0")))
+filter(avg,R{"JONE_INTERVENINGRR"}=?[F "FINAL"],(("OPENING"&"jone0"&"jtwo0"&"jthree1"&"jfour1"&"jfive0"&"jsix1"&"jseven1"&"jeight0"&"jnine0")|("OPENING"&"jone0"&"jtwo1"&"jthree0"&"jfour0"&"jfive1"&"jsix0"&"jseven0"&"jeight1"&"jnine1")|("OPENING"&"jone0"&"jtwo0"&"jthree0"&"jfour1"&"jfive0"&"jsix1"&"jseven1"&"jeight1"&"jnine0")|("OPENING"&"jone0"&"jtwo1"&"jthree1"&"jfour1"&"jfive1"&"jsix0"&"jseven0"&"jeight0"&"jnine0")))
+filter(avg,R{"JONE_INTERVENINGAC"}=?[F "FINAL"],(("OPENING"&"jone0"&"jtwo0"&"jthree1"&"jfour1"&"jfive0"&"jsix1"&"jseven1"&"jeight0"&"jnine0")|("OPENING"&"jone0"&"jtwo1"&"jthree0"&"jfour0"&"jfive1"&"jsix0"&"jseven0"&"jeight1"&"jnine1")|("OPENING"&"jone0"&"jtwo0"&"jthree0"&"jfour1"&"jfive0"&"jsix1"&"jseven1"&"jeight1"&"jnine0")|("OPENING"&"jone0"&"jtwo1"&"jthree1"&"jfour1"&"jfive1"&"jsix0"&"jseven0"&"jeight0"&"jnine0")))
+
+filter(avg,R{"JONE_INTERVENING"}=?[F "FINAL"],(("OPENING"&"jone1"&"jtwo1"&"jthree0"&"jfour0"&"jfive1"&"jsix0"&"jseven0"&"jeight1"&"jnine1")|("OPENING"&"jone1"&"jtwo1"&"jthree0"&"jfour1"&"jfive1"&"jsix0"&"jseven0"&"jeight0"&"jnine1")|("OPENING"&"jone1"&"jtwo0"&"jthree1"&"jfour1"&"jfive0"&"jsix1"&"jseven1"&"jeight0"&"jnine0")))
+filter(avg,R{"JONE_INTERVENINGPP"}=?[F "FINAL"],(("OPENING"&"jone1"&"jtwo1"&"jthree0"&"jfour0"&"jfive1"&"jsix0"&"jseven0"&"jeight1"&"jnine1")|("OPENING"&"jone1"&"jtwo1"&"jthree0"&"jfour1"&"jfive1"&"jsix0"&"jseven0"&"jeight0"&"jnine1")|("OPENING"&"jone1"&"jtwo0"&"jthree1"&"jfour1"&"jfive0"&"jsix1"&"jseven1"&"jeight0"&"jnine0")))
+filter(avg,R{"JONE_INTERVENINGRR"}=?[F "FINAL"],(("OPENING"&"jone1"&"jtwo1"&"jthree0"&"jfour0"&"jfive1"&"jsix0"&"jseven0"&"jeight1"&"jnine1")|("OPENING"&"jone1"&"jtwo1"&"jthree0"&"jfour1"&"jfive1"&"jsix0"&"jseven0"&"jeight0"&"jnine1")|("OPENING"&"jone1"&"jtwo0"&"jthree1"&"jfour1"&"jfive0"&"jsix1"&"jseven1"&"jeight0"&"jnine0")))
+filter(avg,R{"JONE_INTERVENINGAC"}=?[F "FINAL"],(("OPENING"&"jone1"&"jtwo1"&"jthree0"&"jfour0"&"jfive1"&"jsix0"&"jseven0"&"jeight1"&"jnine1")|("OPENING"&"jone1"&"jtwo1"&"jthree0"&"jfour1"&"jfive1"&"jsix0"&"jseven0"&"jeight0"&"jnine1")|("OPENING"&"jone1"&"jtwo0"&"jthree1"&"jfour1"&"jfive0"&"jsix1"&"jseven1"&"jeight0"&"jnine0")))
+
+
+
+// Appendix-2 Analyzing the effect of sentiment on mid-sentence/short-utterance and long/short utternce interventions.
+
+// Appendix-2(a)
+
+filter(avg,P=? [ X ("INTERVENING") ],(("PP"|"RR")&"Pos"))
+filter(avg,P=? [ X ("INTERVENING") ],(("PP"|"RR")&"Neg"))
+filter(avg,P=? [ X ("INTERVENING") ],(("PP"|"RR")&"Neu"))
+
+// Appendix-2(b)
+
+// filter(avg,P=? [ X ("INTERVENING") ],(("PP"|"RR")&"LD"))
+// filter(avg,P=? [ X ("INTERVENING") ],(("PP"|"RR")&"SD"))
+
+// Appendix-2(c)
+
+filter(avg,P=? [ X ("INTERVENING") ],(("PP"|"RR")&"Pos"&"LD"))
+filter(avg,P=? [ X ("INTERVENING") ],(("PP"|"RR")&"Neg"&"LD"))
+filter(avg,P=? [ X ("INTERVENING") ],(("PP"|"RR")&"Neu"&"LD"))
+filter(avg,P=? [ X ("INTERVENING") ],(("PP"|"RR")&"Pos"&"SD"))
+filter(avg,P=? [ X ("INTERVENING") ],(("PP"|"RR")&"Neg"&"SD"))
+filter(avg,P=? [ X ("INTERVENING") ],(("PP"|"RR")&"Neu"&"SD"))
+
+// Appendix-2(d)
+
+// filter(avg,P=?[X("j__one"&"INTERVENING")],"LD"&("PP"|"RR"))
+// filter(avg,P=?[X("j__three"&"INTERVENING")],"LD"&("PP"|"RR"))
+// filter(avg,P=?[X("j__seven"&"INTERVENING")],"LD"&("PP"|"RR"))
+// filter(avg,P=?[X("j__nine"&"INTERVENING")],"LD"&("PP"|"RR"))
+// filter(avg,P=?[X("j__five"&"INTERVENING")],"LD"&("PP"|"RR"))
+// filter(avg,P=?[X("j__six"&"INTERVENING")],"LD"&("PP"|"RR"))
+// filter(avg,P=?[X("j__four"&"INTERVENING")],"LD"&("PP"|"RR"))
+// filter(avg,P=?[X("j__eight"&"INTERVENING")],"LD"&("PP"|"RR"))
+// filter(avg,P=?[X("j__two"&"INTERVENING")],"LD"&("PP"|"RR"))
+// filter(avg,P=?[X("j__one"&"INTERVENING")],"SD"&("PP"|"RR"))
+// filter(avg,P=?[X("j__three"&"INTERVENING")],"SD"&("PP"|"RR"))
+// filter(avg,P=?[X("j__seven"&"INTERVENING")],"SD"&("PP"|"RR"))
+// filter(avg,P=?[X("j__nine"&"INTERVENING")],"SD"&("PP"|"RR"))
+// filter(avg,P=?[X("j__five"&"INTERVENING")],"SD"&("PP"|"RR"))
+// filter(avg,P=?[X("j__six"&"INTERVENING")],"SD"&("PP"|"RR"))
+// filter(avg,P=?[X("j__four"&"INTERVENING")],"SD"&("PP"|"RR"))
+// filter(avg,P=?[X("j__eight"&"INTERVENING")],"SD"&("PP"|"RR"))
+// filter(avg,P=?[X("j__two"&"INTERVENING")],"SD"&("PP"|"RR"))
+
+
+// Appendix-2(e)
+
+filter(avg,P=? [ X ("INTERVENING") ],(("PP"|"RR")&"MS"&"Pos"))
+filter(avg,P=? [ X ("INTERVENING") ],(("PP"|"RR")&"MS"&"Neg"))
+filter(avg,P=? [ X ("INTERVENING") ],(("PP"|"RR")&"MS"&"Neu"))
+filter(avg,P=? [ X ("INTERVENING") ],(("PP"|"RR")&"SF"&"Pos"))
+filter(avg,P=? [ X ("INTERVENING") ],(("PP"|"RR")&"SF"&"Neg"))
+filter(avg,P=? [ X ("INTERVENING") ],(("PP"|"RR")&"SF"&"Neu"))
+
+filter(avg,P=? [ X ("INTERVENING") ],(("PP"|"RR")&"MS"&"Pos"&"SD"))
+filter(avg,P=? [ X ("INTERVENING") ],(("PP"|"RR")&"MS"&"Neg"&"SD"))
+filter(avg,P=? [ X ("INTERVENING") ],(("PP"|"RR")&"MS"&"Neu"&"SD"))
+filter(avg,P=? [ X ("INTERVENING") ],(("PP"|"RR")&"SF"&"Pos"&"SD"))
+filter(avg,P=? [ X ("INTERVENING") ],(("PP"|"RR")&"SF"&"Neg"&"SD"))
+filter(avg,P=? [ X ("INTERVENING") ],(("PP"|"RR")&"SF"&"Neu"&"SD")) 
+
+filter(avg,P=? [ X ("INTERVENING") ],(("PP"|"RR")&"MS"&"Pos"&"LD"))
+filter(avg,P=? [ X ("INTERVENING") ],(("PP"|"RR")&"MS"&"Neg"&"LD"))
+filter(avg,P=? [ X ("INTERVENING") ],(("PP"|"RR")&"MS"&"Neu"&"LD"))
+filter(avg,P=? [ X ("INTERVENING") ],(("PP"|"RR")&"SF"&"Pos"&"LD"))
+filter(avg,P=? [ X ("INTERVENING") ],(("PP"|"RR")&"SF"&"Neg"&"LD"))
+filter(avg,P=? [ X ("INTERVENING") ],(("PP"|"RR")&"SF"&"Neu"&"LD")) 
+
+// Appendix-2(f)
+
+// filter(avg,P=?[X("JJ"&"INTERVENING")],"MS"&("PP"|"RR"))
+// filter(avg,P=?[X("JJ"&"INTERVENING")],"SF"&("PP"|"RR"))
+// filter(avg,P=?[X("JJ"&"INTERVENING")],"MS"&"ACYES")
+// filter(avg,P=?[X("JJ"&"INTERVENING")],"SF"&"ACYES")
+
+// Appendix-2(g)
+
+// filter(avg,P=?[X("j__one"&"INTERVENING")],"MS"&("PP"|"RR"))
+// filter(avg,P=?[X("j__three"&"INTERVENING")],"MS"&("PP"|"RR"))
+// filter(avg,P=?[X("j__seven"&"INTERVENING")],"MS"&("PP"|"RR"))
+// filter(avg,P=?[X("j__nine"&"INTERVENING")],"MS"&("PP"|"RR"))
+// filter(avg,P=?[X("j__five"&"INTERVENING")],"MS"&("PP"|"RR"))
+// filter(avg,P=?[X("j__six"&"INTERVENING")],"MS"&("PP"|"RR"))
+// filter(avg,P=?[X("j__four"&"INTERVENING")],"MS"&("PP"|"RR"))
+// filter(avg,P=?[X("j__eight"&"INTERVENING")],"MS"&("PP"|"RR"))
+// filter(avg,P=?[X("j__two"&"INTERVENING")],"MS"&("PP"|"RR"))
+// filter(avg,P=?[X("j__one"&"INTERVENING")],"SF"&("PP"|"RR"))
+// filter(avg,P=?[X("j__three"&"INTERVENING")],"SF"&("PP"|"RR"))
+// filter(avg,P=?[X("j__seven"&"INTERVENING")],"SF"&("PP"|"RR"))
+// filter(avg,P=?[X("j__nine"&"INTERVENING")],"SF"&("PP"|"RR"))
+// filter(avg,P=?[X("j__five"&"INTERVENING")],"SF"&("PP"|"RR"))
+
+
+// Appendix-2(h)
+
+P=? [ ((!(("PP"|"RR"))) | (("PP"|"RR") & "Neg")) U (("PP"|"RR") & "Pos") ]
+P=? [ ((!(("PP"|"RR"))) | (("PP"|"RR") & "Pos")) U (("PP"|"RR") & "Neg") ]
+// P=? [ ((!(("PP"|"RR"))) | (("PP"|"RR") & "Neg")) U (X(("PP"|"RR") & "Neg")) ]
+// P=? [ ((!(("PP"|"RR"))) | (("PP"|"RR") & "Pos")) U (X(("PP"|"RR") & "Pos")) ]
+
+// Appendix-3 Investigating the relationship between sentiment // and the outcome of the case.
+
+// Appendix-3(a)
+
+filter(avg,R{"JJ_Pos"}=?[F "FINAL"],"OPENING")
+filter(avg,R{"JJ_Neg"}=?[F "FINAL"],"OPENING")
+filter(avg,R{"JJ_Neu"}=?[F "FINAL"],"OPENING")
+filter(avg,R{"PP_Pos"}=?[F "FINAL"],"OPENING")
+filter(avg,R{"PP_Neg"}=?[F "FINAL"],"OPENING")
+filter(avg,R{"PP_Neu"}=?[F "FINAL"],"OPENING")
+filter(avg,R{"RR_Pos"}=?[F "FINAL"],"OPENING")
+filter(avg,R{"RR_Neg"}=?[F "FINAL"],"OPENING")
+filter(avg,R{"RR_Neu"}=?[F "FINAL"],"OPENING")
+
+// Appendix-3(b)
+
+filter(avg,R{"JJ_Pos"}=?[F "FINAL"],("OPENING"&"FP"))
+filter(avg,R{"JJ_Neg"}=?[F "FINAL"],("OPENING"&"FP"))
+filter(avg,R{"JJ_Neu"}=?[F "FINAL"],("OPENING"&"FP"))
+filter(avg,R{"PP_Pos"}=?[F "FINAL"],("OPENING"&"FP"))
+filter(avg,R{"PP_Neg"}=?[F "FINAL"],("OPENING"&"FP"))
+filter(avg,R{"PP_Neu"}=?[F "FINAL"],("OPENING"&"FP"))
+filter(avg,R{"RR_Pos"}=?[F "FINAL"],("OPENING"&"FP"))
+filter(avg,R{"RR_Neg"}=?[F "FINAL"],("OPENING"&"FP"))
+filter(avg,R{"RR_Neu"}=?[F "FINAL"],("OPENING"&"FP"))
+
+// Appendix-3(c)
+
+filter(avg,R{"JJ_Pos"}=?[F "FINAL"],("OPENING"&"NFP"))
+filter(avg,R{"JJ_Neg"}=?[F "FINAL"],("OPENING"&"NFP"))
+filter(avg,R{"JJ_Neu"}=?[F "FINAL"],("OPENING"&"NFP"))
+filter(avg,R{"PP_Pos"}=?[F "FINAL"],("OPENING"&"NFP"))
+filter(avg,R{"PP_Neg"}=?[F "FINAL"],("OPENING"&"NFP"))
+filter(avg,R{"PP_Neu"}=?[F "FINAL"],("OPENING"&"NFP"))
+filter(avg,R{"RR_Pos"}=?[F "FINAL"],("OPENING"&"NFP"))
+filter(avg,R{"RR_Neg"}=?[F "FINAL"],("OPENING"&"NFP"))
+filter(avg,R{"RR_Neu"}=?[F "FINAL"],("OPENING"&"NFP"))
+
+// Appendix-3(d)
+
+filter(avg,P=?[X("FP")],("REBUTTAL"&("Pos")))
+filter(avg,P=?[X("FP")],("REBUTTAL"&("Neg")))
+filter(avg,P=?[X("FP")],("REBUTTAL"&("Neu")))
+filter(avg,P=?[X("NFP")],("REBUTTAL"&("Pos")))
+filter(avg,P=?[X("NFP")],("REBUTTAL"&("Neg")))
+filter(avg,P=?[X("NFP")],("REBUTTAL"&("Neu")))
+
+// Appendix-3(e)
+filter(avg,R{"n_step"}=?[F!("Pos")],("Pos"))
+filter(avg,R{"n_step"}=?[F!("Neg")],("Neg"))
+filter(avg,R{"n_step"}=?[F!("Neu")],("Neu"))
+
+// Appendix-3(f)
+filter(avg,R{"PP_Pos"}=?[F "FINAL"],(("OPENING"&"jone0"&"jtwo0"&"jthree0"&"jfour0"&"jfive0"&"jsix0"&"jseven0"&"jeight0"&"jnine0")|("OPENING"&"jone1"&"jtwo1"&"jthree1"&"jfour1"&"jfive1"&"jsix1"&"jseven1"&"jeight1"&"jnine1")))
+filter(avg,R{"RR_Pos"}=?[F "FINAL"],(("OPENING"&"jone0"&"jtwo0"&"jthree0"&"jfour0"&"jfive0"&"jsix0"&"jseven0"&"jeight0"&"jnine0")|("OPENING"&"jone1"&"jtwo1"&"jthree1"&"jfour1"&"jfive1"&"jsix1"&"jseven1"&"jeight1"&"jnine1")))
+filter(avg,R{"PP_Neg"}=?[F "FINAL"],(("OPENING"&"jone0"&"jtwo0"&"jthree0"&"jfour0"&"jfive0"&"jsix0"&"jseven0"&"jeight0"&"jnine0")|("OPENING"&"jone1"&"jtwo1"&"jthree1"&"jfour1"&"jfive1"&"jsix1"&"jseven1"&"jeight1"&"jnine1")))
+filter(avg,R{"RR_Neg"}=?[F "FINAL"],(("OPENING"&"jone0"&"jtwo0"&"jthree0"&"jfour0"&"jfive0"&"jsix0"&"jseven0"&"jeight0"&"jnine0")|("OPENING"&"jone1"&"jtwo1"&"jthree1"&"jfour1"&"jfive1"&"jsix1"&"jseven1"&"jeight1"&"jnine1")))
+filter(avg,R{"PP_Pos"}=?[F "FINAL"],(("OPENING"&"jone0"&"jtwo0"&"jthree0"&"jfour0"&"jfive0"&"jsix0"&"jseven0"&"jeight0"&"jnine0")))
+filter(avg,R{"RR_Pos"}=?[F "FINAL"],(("OPENING"&"jone0"&"jtwo0"&"jthree0"&"jfour0"&"jfive0"&"jsix0"&"jseven0"&"jeight0"&"jnine0")))
+filter(avg,R{"PP_Neg"}=?[F "FINAL"],(("OPENING"&"jone0"&"jtwo0"&"jthree0"&"jfour0"&"jfive0"&"jsix0"&"jseven0"&"jeight0"&"jnine0")))
+filter(avg,R{"RR_Neg"}=?[F "FINAL"],(("OPENING"&"jone0"&"jtwo0"&"jthree0"&"jfour0"&"jfive0"&"jsix0"&"jseven0"&"jeight0"&"jnine0")))
+filter(avg,R{"PP_Pos"}=?[F "FINAL"],("OPENING"&"jone1"&"jtwo1"&"jthree1"&"jfour1"&"jfive1"&"jsix1"&"jseven1"&"jeight1"&"jnine1"))
+filter(avg,R{"RR_Pos"}=?[F "FINAL"],("OPENING"&"jone1"&"jtwo1"&"jthree1"&"jfour1"&"jfive1"&"jsix1"&"jseven1"&"jeight1"&"jnine1"))
+filter(avg,R{"PP_Neg"}=?[F "FINAL"],("OPENING"&"jone1"&"jtwo1"&"jthree1"&"jfour1"&"jfive1"&"jsix1"&"jseven1"&"jeight1"&"jnine1"))
+filter(avg,R{"RR_Neg"}=?[F "FINAL"],("OPENING"&"jone1"&"jtwo1"&"jthree1"&"jfour1"&"jfive1"&"jsix1"&"jseven1"&"jeight1"&"jnine1"))
+
+// Appendix-4 Miscellaneous Properties.
+
+// (a) How often do we see `laughter' inside the courtroom during a proceeding?
+
+filter(avg,R{"LAUGHTER"}=?[F "FINAL"],"INITIAL")
+
+
+// (b) Of all the utterances in the courtroom during a proceeding, what is the proportion of long to small utterances? 
+
+filter(avg,R{"r_long_dialogue"}=?[F "FINAL"],"INITIAL")
+filter(avg,R{"r_small_dialogue"}=?[F "FINAL"],"INITIAL")
+
+// (c) Of all the utterances in the courtroom during a proceeding, what is the proportion of utterances having less number of pauses to more number of pauses?
+
+filter(avg,R{"r_less_pause"}=?[F "FINAL"],"INITIAL")
+filter(avg,R{"r_more_pause"}=?[F "FINAL"],"INITIAL")
+
+

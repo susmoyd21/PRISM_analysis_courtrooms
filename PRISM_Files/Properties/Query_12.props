@@ -1,0 +1,37 @@
+
+// 12. Analyzing sequences when a justice and an advocate had a long dialogue.
+
+const int j;
+
+// 15(a)
+
+filter(max,R{"n_step"}=?[("RR"|"PP"|"j__one")U("JJ"&!("j__one"))],"RR"|"PP")
+filter(max,R{"n_step"}=?[("RR"|"PP"|"j__three")U("JJ"&!("j__three"))],"RR"|"PP")
+filter(max,R{"n_step"}=?[("RR"|"PP"|"j__seven")U("JJ"&!("j__seven"))],"RR"|"PP")
+filter(max,R{"n_step"}=?[("RR"|"PP"|"j__nine")U("JJ"&!("j__nine"))],"RR"|"PP")
+filter(max,R{"n_step"}=?[("RR"|"PP"|"j__five")U("JJ"&!("j__five"))],"RR"|"PP")
+filter(max,R{"n_step"}=?[("RR"|"PP"|"j__six")U("JJ"&!("j__six"))],"RR"|"PP")
+filter(max,R{"n_step"}=?[("RR"|"PP"|"j__four")U("JJ"&!("j__four"))],"RR"|"PP")
+filter(max,R{"n_step"}=?[("RR"|"PP"|"j__eight")U("JJ"&!("j__eight"))],"RR"|"PP")
+filter(max,R{"n_step"}=?[("RR"|"PP"|"j__two")U("JJ"&!("j__two"))],"RR"|"PP")
+
+// 15(b)
+
+ filter(max,R{"n_step"}=?[("RR"|"PP"|"j__two")U("JJ"&!("j__two"))],("RR"|"PP")&(x=j))
+
+ filter(max, R{"n_step"}=? [ ("RR"|"PP"|"j__one") U ("JJ"&!("j__one")) ],("RR"|"PP")&(x=j))
+
+ filter(max, R{"n_step"}=? [ ("RR"|"PP"|"j__three") U ("JJ"&!("j__three")) ],("RR"|"PP")&(x=j))
+
+ filter(max, R{"n_step"}=? [ ("RR"|"PP"|"j__seven") U ("JJ"&!("j__seven")) ],("RR"|"PP")&(x=j))
+
+ filter(max, R{"n_step"}=? [ ("RR"|"PP"|"j__nine") U ("JJ"&!("j__nine")) ],("RR"|"PP")&(x=j))
+
+ filter(max, R{"n_step"}=? [ ("RR"|"PP"|"j__five") U ("JJ"&!("j__five")) ],("RR"|"PP")&(x=j))
+
+ filter(max, R{"n_step"}=? [ ("RR"|"PP"|"j__six") U ("JJ"&!("j__six")) ],("RR"|"PP")&(x=j))
+
+ filter(max, R{"n_step"}=? [ ("RR"|"PP"|"j__eight") U ("JJ"&!("j__eight")) ],("RR"|"PP")&(x=j))
+
+ filter(max, R{"n_step"}=? [ ("RR"|"PP"|"j__four") U ("JJ"&!("j__four")) ],("RR"|"PP")&(x=j))
+

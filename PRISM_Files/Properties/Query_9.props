@@ -1,0 +1,42 @@
+// 9. From an utterance of an advocate, how many times is the advocate intervened in the next 50 time-units.
+
+const int j;
+
+filter(max, R{"r_INTERVENING"}=? [C<=50], "PP"|"RR")
+// filter(max, R{"JJ_INTERVENINGPP"}=? [C<=50], "PP")
+// filter(max, R{"JJ_INTERVENINGRR"}=? [C<=50], "RR")
+
+// filter(max, R{"JJ_INTERVENINGPP"}=? [C<=50], ("PP"&"FP"))
+// filter(max, R{"JJ_INTERVENINGRR"}=? [C<=50], ("RR"&"FP"))
+
+filter(state, R{"r_INTERVENING"}=? [C<=50], ("PP"|"RR")&(x=j))
+filter(state, R{"JJ_INTERVENINGPP"}=? [C<=50], "PP"&(x=j))
+filter(state, R{"JJ_INTERVENINGRR"}=? [C<=50], "RR"&(x=j))
+
+ filter(max,R{"JONE_INTERVENINGPP"}=?[C<=60],x=j)
+ filter(max,R{"JONE_INTERVENINGRR"}=?[C<=60],x=j)
+
+ filter(max,R{"JTWO_INTERVENINGPP"}=?[C<=60],x=j)
+ filter(max,R{"JTWO_INTERVENINGRR"}=?[C<=60],x=j)
+
+ filter(max,R{"JTHREE_INTERVENINGPP"}=?[C<=60],x=j)
+ filter(max,R{"JTHREE_INTERVENINGRR"}=?[C<=60],x=j)
+
+ filter(max,R{"JFOUR_INTERVENINGPP"}=?[C<=60],x=j)
+ filter(max,R{"JFOUR_INTERVENINGRR"}=?[C<=60],x=j)
+
+ filter(max,R{"JFIVE_INTERVENINGPP"}=?[C<=60],x=j)
+ filter(max,R{"JFIVE_INTERVENINGRR"}=?[C<=60],x=j)
+
+ filter(max,R{"JSIX_INTERVENINGPP"}=?[C<=60],x=j)
+ filter(max,R{"JSIX_INTERVENINGRR"}=?[C<=60],x=j)
+
+ filter(max,R{"JSEVEN_INTERVENINGPP"}=?[C<=60],x=j)
+ filter(max,R{"JSEVEN_INTERVENINGRR"}=?[C<=60],x=j)
+
+ filter(max,R{"JEIGHT_INTERVENINGPP"}=?[C<=60],x=j)
+ filter(max,R{"JEIGHT_INTERVENINGRR"}=?[C<=60],x=j)
+
+ filter(max,R{"JNINE_INTERVENINGPP"}=?[C<=60],x=j)
+ filter(max,R{"JNINE_INTERVENINGRR"}=?[C<=60],x=j)
+
